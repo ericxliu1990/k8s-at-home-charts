@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 1.0.0
+description: brother-ql-web helm package
+name: brother-ql-web
+version: 1.1.2
+kubeVersion: ">=1.16.0-0"
+keywords:
+- brother-ql-web
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/brother-ql-web
+icon: https://brother-ql-web.org/icon
+sources:
+- https://github.com/brother-ql-web/brother-ql-web-docker
+maintainers:
+- name: brother-ql-web
+  email: brother-ql-web@brother-ql-web.com
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.4.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
