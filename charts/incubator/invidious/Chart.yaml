@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 1.0.0
+description: invidious helm package
+name: invidious
+version: 1.1.2
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - ${CHARTNAME}
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/invidious
+icon: https://invidious.org/icon
+sources:
+  - https://github.com/invidious/invidious-docker
+maintainers:
+  - name: invidious
+    email: invidious@invidious.com
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.4.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
