@@ -19,19 +19,6 @@ image:
 env:
   # -- Set the container timezone
   TZ: UTC
-  INVIDIOUS_CONFIG: |
-    db:
-      dbname: invidious
-      user: invidious
-      password: fRksRoWEdmmhq4suMhnQeQTNhaTQCDSCu3fgeXsGStyrggaxBa6brJ6sCAdXZoAv
-      host: acid-invidious.postgres-operator
-      port: 5432
-    check_tables: true
-    # external_port:
-    # domain:
-    # https_only: false
-    # statistics_enabled: false
-
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
