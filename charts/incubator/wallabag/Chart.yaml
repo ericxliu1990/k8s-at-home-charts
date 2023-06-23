@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 1.0.0
+description: wallabag helm package
+name: wallabag
+version: 1.2.2
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - wallabag
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/wallabag
+icon: https://wallabag.org/icon
+sources:
+  - https://github.com/wallabag/wallabag-docker
+maintainers:
+  - name: wallabag
+    email: wallabag@wallabag.com
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
